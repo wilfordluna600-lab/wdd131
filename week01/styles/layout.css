@@ -1,0 +1,27 @@
+body {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: repeat(10, 100px);
+}
+header {
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+nav {
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    justify-content: space-around;
+}
+main {
+    grid-column: 1/3;
+    grid-row: 4/8;
+}
+aside {
+    grid-column: 3/4;
+    grid-row: 4/8;
+}
+footer {
+    grid-column: 1/4;
+    grid-row: 8/11;
+}
