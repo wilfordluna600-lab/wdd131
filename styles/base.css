@@ -6,7 +6,9 @@ header nav {
 }
 body {
     max-width: 840px;
+    width: 840px;
 }
 main {
     max-width: 840px;
+    width: 840px;
 }
