@@ -4,3 +4,9 @@ header span {
 header nav {
     display: flex;
 }
+body {
+    max-width: 840px;
+}
+main {
+    max-width: 840px;
+}
