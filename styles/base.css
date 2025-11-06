@@ -1,0 +1,6 @@
+header span {
+    display: block;
+}
+header nav {
+    display: flex;
+}
