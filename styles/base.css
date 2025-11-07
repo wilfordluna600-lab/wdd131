@@ -1,8 +1,13 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 header span {
     display: block;
+    text-align: center;
 }
 header nav {
     display: flex;
+    justify-content: space-evenly;
 }
 body {
     max-width: 840px;
@@ -11,4 +16,13 @@ body {
 main {
     max-width: 840px;
     width: 840px;
+}
+#course-title, .body-title, footer {
+    background-color: beige;
+}
+header nav {
+    background-color: #666666;
+}
+header nav a {
+    color: white;
 }
