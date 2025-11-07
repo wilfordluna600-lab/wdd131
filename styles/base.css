@@ -8,9 +8,13 @@ header span {
 header nav {
     display: flex;
     justify-content: space-evenly;
+    background-color: #272727;
 }
 body {
     max-width: 900px;
+    width: 900px;
+}
+header {
     width: 900px;
 }
 main {
@@ -21,9 +25,6 @@ main {
 }
 #course-title, .body-title, footer {
     background-color: beige;
-}
-header nav {
-    background-color: #272727;
 }
 header nav a {
     color: white;
