@@ -14,8 +14,10 @@ body {
     width: 840px;
 }
 main {
+    display: grid;
     max-width: 840px;
     width: 840px;
+    grid-template-columns: 2fr 1fr;
 }
 #course-title, .body-title, footer {
     background-color: beige;
@@ -25,4 +27,7 @@ header nav {
 }
 header nav a {
     color: white;
+}
+header nav a:hover {
+    color: yellow;
 }
