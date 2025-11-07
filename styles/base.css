@@ -23,7 +23,7 @@ main {
     background-color: beige;
 }
 header nav {
-    background-color: #666666;
+    background-color: #272727;
 }
 header nav a {
     color: white;
@@ -63,9 +63,4 @@ header nav a:hover {
 .section-second-paragraph {
     grid-column: 2/3;
     grid-row: 4/5;
-}
-.highlight {
-	color: navy;
-	font-weight: 700;
-	font-family: hebrew;
 }
