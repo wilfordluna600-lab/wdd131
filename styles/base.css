@@ -10,13 +10,13 @@ header nav {
     justify-content: space-evenly;
 }
 body {
-    max-width: 840px;
-    width: 840px;
+    max-width: 1500px;
+    width: 1500px;
 }
 main {
     display: grid;
-    max-width: 840px;
-    width: 840px;
+    max-width: 1500px;
+    width: 1500px;
     grid-template-columns: 2fr 1fr;
 }
 #course-title, .body-title, footer {
@@ -30,4 +30,29 @@ header nav a {
 }
 header nav a:hover {
     color: yellow;
+}
+.first-card {
+    display: grid;
+    grid-template-columns: 3fr 4fr 3fr;
+    grid-template-rows: 1fr 4fr 1fr 5fr;
+}
+.body-title {
+    column-span: 3;
+}
+.section-first-paragraph {
+    column-span: 2;
+}
+.index-first-image {
+    column-span: 1;
+}
+.title-country {
+    column-span: 2;
+}
+.index-second-image {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.section-second-paragraph {
+    grid-column: 2/3;
+    grid-row: 4/5;
 }
