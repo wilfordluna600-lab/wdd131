@@ -1,0 +1,24 @@
+header {
+    background-color: gold;
+}
+footer {
+    background-color: gold;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a:hover {
+    color: navy;
+}
+h1 {
+    color: white;
+}
+nav {
+
+}
