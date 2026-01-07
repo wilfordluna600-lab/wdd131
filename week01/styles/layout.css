@@ -1,6 +1,17 @@
 body {
     display: grid;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header nav {
     display: flex;
+    background-color: black;
+}
+header, footer {
+    background-color: navy;
+}
+main {
+    background-color: gray;
+}
+header, main, footer {
+    color: white;
 }
