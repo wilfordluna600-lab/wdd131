@@ -65,3 +65,7 @@ header nav a:hover {
     grid-column: 2/3;
     grid-row: 4/5;
 }
+.card ul li {
+    padding: 5px;
+    margin: 2px;
+}
