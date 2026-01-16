@@ -1,0 +1,33 @@
+header {
+    background-color: gold;
+}
+footer {
+    background-color: gold;
+}
+body {
+    max-width: 800px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a:hover {
+    color: navy;
+}
+h1 {
+    color: white;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.nine-images {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+main nav figure {
+    width: 100px;
+}
