@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/bom.css">
+    <title>Book of Mormon List</title>
+    <script src="scripts/bom.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>📖 Book of Mormon - Top 10</h1>
+    </header>
+    <main>
+	    <label for="favchap">Enter Book and Chapter: </label>
+	    <input type="text" id="favchap" placeholder="Alma 5">
+	    <button type="submit">Add Chapter</button>
+	    <ul id="list"></ul>
+    </main>
     
 </body>
 </html>
