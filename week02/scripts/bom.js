@@ -12,14 +12,15 @@ and in line 9, I want to remember this, and if
 it is necesary I'm going to delete it, for the
 time being these lines stay here. */
 button.addEventListener('click', function() {
-    li.textContent = input.value;
-    deleteButton.textContent = '❌';
-    li.append(deleteButton);
-    list.append(li);
+    if (input.value.trim() !== '') {
+        li.textContent = input.value;
+        deleteButton.textContent = '❌';
+        li.append(deleteButton);
+        list.append(li);
+        input.value = '';
+        input.focus();}
 });
 deleteButton.addEventListener('click', function () {
     list.removeChild(li);
     input.focus();
 });
-input.value = '';
-input.focus();
