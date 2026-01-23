@@ -33,6 +33,8 @@ main nav figure {
     width: 100px;
 }
 header h1 {
-    
     text-shadow: 2px black;
+}
+header main footer {
+    border: 2px black;
 }
