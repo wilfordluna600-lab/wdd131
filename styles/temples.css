@@ -19,7 +19,7 @@ nav a:hover {
     color: navy;
 }
 h1 {
-    color: white;
+    color: navy;
 }
 main {
     max-width: 800px;
@@ -31,4 +31,8 @@ main {
 }
 main nav figure {
     width: 100px;
+}
+header h1 {
+    
+    text-shadow: 2px black;
 }
