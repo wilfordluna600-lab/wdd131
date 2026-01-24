@@ -1,5 +1,10 @@
 header {
     background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 footer {
     background-color: gold;
@@ -11,12 +16,21 @@ body {
     font-weight: 200px;
 }
 nav {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+nav {
+    list-style-type: none;
 }
 nav a:hover {
+    border: 1px solid #fff;
     color: navy;
+}
+nav {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
 }
 h1 {
     color: navy;
@@ -32,9 +46,21 @@ main {
 main nav figure {
     width: 100px;
 }
-header h1 {
-    text-shadow: 2px black;
+header span {
+    color: navy;
+    font-size: 2rem;
 }
 header main footer {
     border: 2px black;
+}
+main h1 {
+    text-align: center;
+}
+@media (min-width: 640px) {
+    nav {
+        display: flex;
+    }
+    nav a {
+        flex: 1 1 100%;
+    }
 }
