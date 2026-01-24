@@ -57,10 +57,10 @@ main h1 {
     text-align: center;
 }
 @media (min-width: 640px) {
-    nav {
+    header nav {
         display: flex;
     }
-    nav a {
+    header nav a {
         flex: 1 1 100%;
     }
 }
