@@ -1,9 +1,8 @@
-@media screen and (min-width: 840px) {
-    nav {
+@media screen and (min-width: 640px) {
+    header nav ul{
         display: flex;
-
     }
-    nav a {
+    header nav ul li {
         flex: 1 1 100%;
     }
     .nine-images {
