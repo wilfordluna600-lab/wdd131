@@ -18,6 +18,7 @@
     }
     .weather {
         clear: both;
+        z-index: 2;
     }
     body {
         max-width: 1000px;
