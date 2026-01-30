@@ -1,10 +1,32 @@
-picture {
-    width: 100%;
-    height: auto;
+header {
+    background-color: red;
 }
 body {
     max-width: 500px;
 }
+main {
+    background-color: white;
+    text-align: center;
+
+}
+footer {
+    background-color: red;
+}
 h1 {
     text-align: center;
+}
+.first-image{
+    position: relative;
+    width: 400px;
+    height: auto;
+    opacity: 1;
+}
+.second-image{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+img {
+    margin: 0 auto;
 }

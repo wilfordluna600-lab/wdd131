@@ -13,16 +13,18 @@
         <h1>Peru</h1>
     </header>
     <main>
-        <picture>
-            <source srcset="images/vicuna-large.webp" media="(min-width: 1000px)" width="1000px">
-            <img src="images/vicuna-small.webp" alt="Vicuña Image" width="500px" height="624px">
-        </picture>
+        <div class="first-image">
+            <img src="images/vicuna-small.webp" alt="Temple name and location" width="500" height="624">
+        </div>
+        <div class="second-image">
+            <img src="images/large-image.webp" alt="Temple name and location" width="1000">
+        </div>
         <section class="data">
             <h2>Data</h2>
             <p><b>Area:</b> 1,285,216 sq km</p>
             <p><b>Population:</b> 34,352,720</p>
             <p><b>Capital:</b> Lima</p>
-            <p><b>Languages:</b> Español, Quechua</p>
+            <p><b>Languages:</b> Spanish, Quechua</p>
             <p><b>Currency:</b> Nuevos Soles</p>
             <p><b>Time Zone:</b> UTC-5</p>
             <p><b>Calling Code:</b> +51</p>
@@ -30,16 +32,18 @@
         </section>
         <section class="weather">
             <h2>Weather</h2>
+            <p><b>Temperature:</b> 46ºF</p>
+            <p><b>Conditions:</b> Party Cloudy</p>
+            <p><b>Wind:</b> 4mph</p>
+            <p><b>Wind Chill:</b> <span id="windchill"></span>ºF</p>
             <picture>
                 <img src="images/weather-small.svg" alt="weather image" width="200px">    
             </picture>
-
-
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> - Wilford Luna - Peru</p>
-        <p id="lastModified"></p>
+        <p>® <span id="currentyear"></span> - Wilford Luna Escobar - Peru</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>

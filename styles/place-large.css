@@ -1,5 +1,28 @@
-@media screen and (min-width: 1000px) {
+@media (min-width: 700px) {
+    .first-image {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+    .second-image {
+        width: 800px;
+        height: auto;
+        opacity: 1;
+    }
+    main {
+        position: relative;
+    }
+    .data {
+        position: absolute;
+        z-index: 2;
+    }
+    .weather {
+        clear: both;
+    }
     body {
         max-width: 1000px;
+    }
+    footer {
+        clear: both;
     }
 }
