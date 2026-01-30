@@ -17,7 +17,6 @@
         z-index: 2;
     }
     .weather {
-        clear: both;
         z-index: 2;
     }
     body {
@@ -25,5 +24,6 @@
     }
     footer {
         clear: both;
+        text-align: center;
     }
 }
