@@ -1,0 +1,17 @@
+@media screen and (min-width: 640px) {
+    header nav ul{
+        display: flex;
+    }
+    header nav ul li {
+        flex: 1 1 100%;
+    }
+    .nine-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    main div figure {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
