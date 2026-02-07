@@ -4,7 +4,7 @@ document.getElementById("currentyear").textContent = currentYear;
 document.getElementById("lastModified").innerHTML = document.lastModified;
 
 const mainnav = document.querySelector('.navigation')
-const hambutton = document.querySelector('#menu');
+const hambutton = document.querySelector('.menu');
 
 hambutton.addEventListener('click', () => {
     mainnav.classList.toggle('show');
@@ -93,11 +93,11 @@ const temples = [
   },
 ];
 
-createTempleCard(temples);
+createTempleCard();
 
-function createTempleCard(filteredTemples) {
+function createTempleCard() {
   document.querySelector(".nine-images").innerHTML + "";
-  filteredTemples.array.forEach(temple => {
+  temples.array.forEach(temple => {
     let card = document.createElement("section");
     let name = document.createElement("h3");
     let location = document.createElement("p");
