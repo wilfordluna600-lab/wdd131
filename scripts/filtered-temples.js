@@ -124,5 +124,3 @@ function createTempleCard(temples) {
     document.querySelector(".nine-images").appendChild(card);
   });
 }
-
-document.querySelector(".nine-images").innerHTML = createTempleCard(temples);
