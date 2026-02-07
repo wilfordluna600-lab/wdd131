@@ -91,7 +91,6 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lisbon-portugal/400x250/03-045a97e8471a9f581e927698521a1d184f4b3753.jpeg"
   },
-  // Add more temple objects here...
 ];
 
 createTempleCard(temples);
