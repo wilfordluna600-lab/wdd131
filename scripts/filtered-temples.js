@@ -10,6 +10,8 @@ hambutton.addEventListener('click', () => {
     mainnav.classList.toggle('show');
     hambutton.classList.toggle('show');
 });
+
+
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -95,8 +97,8 @@ const temples = [
 
 createTempleCard(temples);
 
-function createTempleCard() {
-  document.querySelector(".nine-images").innerHTML + "";
+function createTempleCard(temples) {
+  document.querySelector(".nine-images").innerHTML + " ";
   temples.array.forEach(temple => {
     let card = document.createElement("section");
     let name = document.createElement("h3");
@@ -122,3 +124,5 @@ function createTempleCard() {
     document.querySelector(".nine-images").appendChild(card);
   });
 }
+
+document.querySelector(".nine-images").innerHTML = createTempleCard(temples);

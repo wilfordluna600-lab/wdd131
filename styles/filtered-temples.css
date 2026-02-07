@@ -14,7 +14,7 @@ footer {
     text-align: center;
 }
 body {
-    max-width: 10000px;
+    max-width: 800px;
     font-family: "Roboto", sans-serif;
 }
 nav {
@@ -34,7 +34,7 @@ h1 {
     color: navy;
 }
 main {
-    max-width: 10000px;
+    max-width: 800px;
     margin: 0 auto;
 }
 .nine-images {
@@ -42,9 +42,7 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
-main nav figure {
-    width: 100px;
-}
+
 header span {
     color: navy;
     font-size: 2rem;
@@ -59,10 +57,7 @@ main h1 {
 .navigation {
     list-style: none;
     margin: 0 auto;
-    max-width: 10000px;
-}
-.navigation li {
-    display: none;
+    max-width: 800px;
 }
 .navigation a {
     display: block;
@@ -89,13 +84,15 @@ main h1 {
 .show li {
     display: block;
 }
-#menu.show::before {
+.menu.show::before {
     content: "X";
 }
 section img {
     width: 100%;
     height: auto;
-}
-img {
     overflow: clip;
+    width: 150px;
+}
+section {
+    width: 200px;
 }
