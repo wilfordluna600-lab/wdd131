@@ -97,6 +97,5 @@ section img {
     height: auto;
 }
 img {
-    overflow-clip-margin: content-box;
     overflow: clip;
 }
