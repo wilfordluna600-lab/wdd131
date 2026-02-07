@@ -19,16 +19,15 @@ body {
 }
 nav {
     list-style-type: none;
-}
-nav a:hover {
-    border: 1px solid #fff;
-    color: navy;
-}
-nav {
+    background-color: tomato;
     display: block;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
+}
+nav a:hover {
+    border: 1px solid #fff;
+    color: navy;
 }
 h1 {
     color: navy;
@@ -81,9 +80,6 @@ main h1 {
 }
 #menu::before {
     content: "☰";
-}
-nav {
-    background-color: tomato;
 }
 .navigation a:hover, .navigation a:active {
     color: white;
