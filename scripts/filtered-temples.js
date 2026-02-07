@@ -93,7 +93,7 @@ const temples = [
   },
 ];
 
-createTempleCard();
+createTempleCard(temples);
 
 function createTempleCard() {
   document.querySelector(".nine-images").innerHTML + "";
