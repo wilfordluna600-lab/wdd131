@@ -99,7 +99,7 @@ createTempleCard(temples);
 
 function createTempleCard(temples) {
   document.querySelector(".nine-images").innerHTML + " ";
-  temples.array.forEach(temple => {
+  temples.forEach(temple => {
     let card = document.createElement("section");
     let name = document.createElement("h3");
     let location = document.createElement("p");
