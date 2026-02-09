@@ -88,7 +88,6 @@ main h1 {
     content: "X";
 }
 section img {
-    width: 100%;
     height: auto;
     overflow: clip;
     width: 150px;
