@@ -1,6 +1,5 @@
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
-
 document.getElementById("lastModified").innerHTML = document.lastModified;
 
 const mainnav = document.querySelector('.navigation')
@@ -97,9 +96,36 @@ const temples = [
 
 createTempleCard(temples);
 
-function createTempleCard(temples) {
-  document.querySelector(".nine-images").innerHTML + "";
-  temples.forEach(temple => {
+const homeLink = document.querySelector("#home");
+homeLink.addEventListener("click", () => {
+    createTempleCard(temples);
+});
+
+const oldLink = document.querySelector("#old");
+oldLink.addEventListener("click", () => {
+    const splitYear = temples.dedicated.split(",");
+    const specificYear = Number(splitYear[0]);
+    createTempleCard(temples.filter(temple => temple.dedicatedspecificYear < 1900));
+});
+
+const newLink = document.querySelector("#new");
+newLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 1900));
+});
+
+const largeLink = document.querySelector("#large");
+largeLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+});
+
+const smallLink = document.querySelector("#small");
+smallLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+});
+
+function createTempleCard(filteredTemples) {
+  document.querySelector(".nine-images").innerHTML = "";
+  filteredTemples.forEach(temple => {
     let card = document.createElement("section");
     let name = document.createElement("h3");
     let location = document.createElement("p");
