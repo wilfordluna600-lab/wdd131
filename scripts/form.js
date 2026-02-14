@@ -34,14 +34,13 @@ const products = [
 
 createOptions(products);
 
-function createOptions(showOptions) {
-  document.querySelector("#product").innerHTML = "";
-  showOptions.forEach(option => {
-    let option = document.createElement("option");
-
-    option.textContent = option.name;
-    option.setAttribute("value", option.id);
+function createOptions(products) {
+  let select = document.querySelector("#product");  
+  products.forEach(options => {
+    let eachOption = document.createElement("option");
+    eachOption.textContent = options.name;
+    eachOption.value = options.id;
     
-    document.querySelector("#product").appendChild(option);
+    select.appendChild(eachOption);
   });
 }
