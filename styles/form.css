@@ -1,6 +1,23 @@
-header footer {
+header, footer {
     background-color: #255876;
     color: white;
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"] {
+    display: block;
+}
+
+input[type="date"] {
+    display: block;
+}
+
+textarea {
+    display: block;
 }
 
 input[type="radio"] {
