@@ -1,3 +1,8 @@
+header footer {
+    background-color: #255876;
+    color: white;
+}
+
 input[type="radio"] {
 	display: none;
 	position: relative;
@@ -10,7 +15,7 @@ input[type="radio"] {
 	justify-content: left;
 }
 
-.stars > label {
+.stars {
 	color: gold;
 	width: 30px;
 	height: 30px;
@@ -21,11 +26,11 @@ input[type="radio"] {
 	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
 }
 
-.stars > label:hover {
+.stars:hover {
 	color: #000;
 }
 
-.stars > label::before {
+.stars::before {
 	content: "\2606";
 }
 
