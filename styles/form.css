@@ -1,3 +1,7 @@
+* {
+    max-width: 37.5rem;
+}
+
 header, footer {
     background-color: #255876;
     color: white;
