@@ -15,27 +15,26 @@
     </header>
     <main>
         <form action="review.html" method="get">
-            <div>Required Fields (*)</div>
-            <div>Product Name*</div>
-            <select name="product" id="product" required>
-                <option value="" disabled selected>Select a Product ...</option>
-            </select>
-            <div>Overall Rating*</div>
-            <div class="stars">
-	            <label><input type="radio" id="fivestar" name="stars" value="5" required></label>
-	            <label><input type="radio" id="fourstar" name="stars" value="4" required></label>
-	            <label><input type="radio" id="threestar" name="stars" value="3" required></label>
-	            <label><input type="radio" id="twostar" name="stars" value="2" required></label>
-	            <label><input type="radio" id="onestar" name="stars" value="1" required></label>
-            </div>
-            <input type="radio" name="rating" id="one_star" value="one star" required>
-            <input type="radio" name="rating" id="two_stars" value="two stars" required>
-            <input type="radio" name="rating" id="three_stars" value="three stars" required>
-            <input type="radio" name="rating" id="four_stars" value="four stars" required>
-            <input type="radio" name="rating" id="five_stars" value="five stars" required>
+            <label>Required Fields (*)</label>
+            <label>Product Name*</label>
+            <label>
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </label>
+            <label>Overall Rating*</label>
+            <label>
+                <div class="stars">
+	                <label><input type="radio" id="fivestar" name="stars" value="5" required></label>
+	                <label><input type="radio" id="fourstar" name="stars" value="4" required></label>
+	                <label><input type="radio" id="threestar" name="stars" value="3" required></label>
+	                <label><input type="radio" id="twostar" name="stars" value="2" required></label>
+	                <label><input type="radio" id="onestar" name="stars" value="1" required></label>
+                </div>
+            </label>
             <label>Date of Installation* <input type="date" name="completeDate" id="completeDate" required></label>
-            <div>Which features did you find useful in the product?</div>
-            <div>(Check all that apply)</div>
+            <label>Which features did you find useful in the product?</label>
+            <label>(Check all that apply)</label>
             <label><input type="checkbox" name="features" id="feature_durability" value="durability"> Durability</label>
             <label><input type="checkbox" name="features" id="feature_ease" value="ease of use"> Ease of Use</label>
             <label><input type="checkbox" name="features" id="feature_performance" value="performance"> Performance</label>
