@@ -31,12 +31,6 @@ input[type="radio"] {
 }
 
 .stars {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: left;
-}
-
-.stars {
 	color: gold;
 	width: 30px;
 	height: 30px;
