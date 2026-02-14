@@ -52,3 +52,9 @@ input[type="radio"] {
 .stars input:checked ~ label::before {
 	content: "\2605";
 }
+
+input[type="text"], input[type="checkbox"], input[type="submit"] {
+    margin: 5px;
+    padding: 5px;
+    height: 20px;
+}

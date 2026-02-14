@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
     <title>Product Review Form</title>
     <meta name="author" content="Wilford Luna">
     <meta name="description" content="In this page we will use a form to give comments and feedback about a product.">
@@ -17,11 +18,9 @@
         <form action="review.html" method="get">
             <label>Required Fields (*)</label>
             <label>Product Name*</label>
-            <label>
-                <select name="product" id="product" required>
+            <label><select name="product" id="product" required>
                     <option value="" disabled selected>Select a Product ...</option>
-                </select>
-            </label>
+            </select></label>
             <label>Overall Rating*</label>
 	        <label class="stars"><input type="radio" id="fivestar" name="stars" value="5" required></label><br>
 	        <label class="stars"><input type="radio" id="fourstar" name="stars" value="4" required></label><br>
