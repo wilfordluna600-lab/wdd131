@@ -18,8 +18,6 @@
     </header>
     <main>
         <form action="review.html" method="get">
-            <fieldset>
-                <legend>Specific Review</legend>
                 <label>Required Fields (*)</label>
                 <label for="product">Product Name*</label>
                 <select id="product" name="product" required>
@@ -28,10 +26,10 @@
                 <label>Overall Rating*</label>
                 <label for="stars" class="stars"><input type="radio" id="fivestar" name="stars" value="5"
                         required></label>
-                <label for="stars" class="stars"><input type="radio" id="fourstar" name="stars" value="4"></label>
-                <label for="stars" class="stars"><input type="radio" id="threestar" name="stars" value="3"></label>
-                <label for="stars" class="stars"><input type="radio" id="twostar" name="stars" value="2"></label>
-                <label for="stars" class="stars"><input type="radio" id="onestar" name="stars" value="1"></label>
+                <label for="stars" class="stars"><input type="radio" id="fourstar" name="stars" value="4" required></label>
+                <label for="stars" class="stars"><input type="radio" id="threestar" name="stars" value="3" required></label>
+                <label for="stars" class="stars"><input type="radio" id="twostar" name="stars" value="2" required></label>
+                <label for="stars" class="stars"><input type="radio" id="onestar" name="stars" value="1" required></label>
                 <label for="completeDate">Date of Installation* <input type="date" name="completeDate" id="completeDate"
                         required></label>
                 <label>Which features did you find useful in the product?</label>
@@ -46,14 +44,10 @@
                     Performance</label>
                 <label for="features"><input type="checkbox" name="features" id="feature_design" value="design">
                     Design</label>
-            </fieldset>
-            <fieldset>
-                <legend>Additional Review</legend>
                 <label for="comments">Written Review (Optional) <textarea name="comments" id="comments" rows="4"
                         cols="50"></textarea></label>
                 <label for="name">Your name (Optional) <input type="text" name="name" id="name"></label>
                 <input type="submit" value="Send my Product Review">
-            </fieldset>
         </form>
 
     </main>
