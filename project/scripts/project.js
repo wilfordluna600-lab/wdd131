@@ -10,46 +10,15 @@ const firstPage = [
     subtitle: "Club Members",
     content: "Our club has 60 members, with a president along with nine other members who run this club. We accept people who are of legal age and want to participate.",
     image: "../images/image-running-one.jpg",
-    imageName: ,
+    imageName: "first-image-running",
   },
     {
     subtitle: "Weekly Practices",
     content: "We have weekly practices at Pisco Beach and Paracas Beach, which are located in the city of Pisco; all members are invited to come and practice with the group while enjoying the relaxing view of the sea.",
     image: "../images/image-running-two.jpg",
+    imageName: "second-image-running",
   },
 ];
-
-console.log(productos);
-
-// Insertar dinámicamente en el DOM
-productos.forEach(producto => {
-  // Crear un contenedor
-  const div = document.createElement("div");
-  div.className = "producto";
-
-  // Crear título
-  const titulo = document.createElement("h3");
-  titulo.textContent = producto.nombre;
-
-  // Crear imagen
-  const img = document.createElement("img");
-  img.src = producto.imagen; // Asignar la ruta
-  img.alt = producto.nombre;
-  img.width = 200; // Opcional
-
-  // Crear precio
-  const precio = document.createElement("p");
-  precio.textContent = `Precio: $${producto.precio}`;
-
-  // Añadir elementos al contenedor
-  div.appendChild(titulo);
-  div.appendChild(img);
-  div.appendChild(precio);
-
-  // Insertar en el body o en un contenedor específico
-  document.body.appendChild(div);
-});
-
 
 
 createContentCard(firstPage);
@@ -62,20 +31,17 @@ function createContentCard(showContent) {
     let eachContent = document.createElement("p");
     let img = document.createElement("img");
 
-    name.textContent = temple.templeName;
-    location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
-    dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
-    area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
-    img.setAttribute("src", temple.imageUrl);
-    img.setAttribute("alt", `${temple.templeName} Temple`);
+    eachSubtitle.textContent = firstPage.subtitle;
+    eachContent.textContent = firstPage.content;
+    img.setAttribute("src", firstPage.image);
+    img.setAttribute("alt", firstPage.imageName);
     img.setAttribute("loading", "lazy");
+    img.setAttribute("width", 300);
 
-    card.appendChild(name);
-    card.appendChild(location);
-    card.appendChild(dedication);
-    card.appendChild(area);
+    card.appendChild(eachSubtitle);
+    card.appendChild(eachContent);
     card.appendChild(img);
 
-    document.querySelector(".nine-images").appendChild(card);
+    document.querySelector(".first-content").appendChild(card);
   });
 }
