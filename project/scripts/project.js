@@ -44,3 +44,57 @@ function createContentCard(showContent) {
     document.querySelector(".first-content").appendChild(card);
   });
 };
+
+
+
+const secondPage = [
+  {
+  subtitle: "Our last Competition",
+  content: "Among the many competitions we had in the past, this was our last competition that we held for the club's anniversary.",
+  location: "Pisco City, District San Andres",
+  distance: "10Km",
+  date: "November 24th 2025",
+  image: "images/image-running-three.jpg",
+  imageName: "third image running",
+  },
+  {
+  subtitle: "Our next Competition",
+  content: "We will soon participate in this great competition in the capital of the country, everyone and, of course, our club are invited to take part.",
+  location: "State Lima, Huaura City, Huacho District",
+  distance: "15Km",
+  date: "March 15th 2026",
+  image: "images/image-running-four.jpg",
+  imageName: "fourth image running",
+  },
+];
+
+
+createSecondContentCard(secondPage);
+
+function createSecondContentCard(showSecondContent) {
+  document.querySelector(".second-content").innerHTML = "";
+  showSecondContent.forEach(contents => {
+    let card = document.createElement("section");
+    let eachSubtitle = document.createElement("h2");
+    let eachContent = document.createElement("p");
+    let eachLocation = document.createElement("p");
+    let eachDistance = document.createElement("p");
+    let eachDate = document.createElement("p");
+    let img = document.createElement("img");
+
+    eachSubtitle.textContent = contents.subtitle;
+    eachContent.textContent = contents.content;
+    eachLocation.innerHTML = `<span class="label">Location:</span> ${contents.location}`;
+    eachDistance.innerHTML = `<span class="label">Distance:</span> ${contents.distance}`;
+    eachDate.innerHTML = `<span class="label">Date:</span> ${contents.date}`;
+    img.src = contents.image;
+    img.alt = contents.imageName;
+    img.setAttribute("loading", "lazy");    
+
+    card.appendChild(eachSubtitle);
+    card.appendChild(eachContent);
+    card.appendChild(img);
+
+    document.querySelector(".second-content").appendChild(card);
+  });
+};
