@@ -4,7 +4,11 @@ body {
 }
 .content {
     display: grid;
-    grid-column: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.second-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 header, footer {
     background-color: #255876;

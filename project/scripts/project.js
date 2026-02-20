@@ -2,8 +2,6 @@ const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
 document.getElementById("lastModified").innerHTML = document.lastModified;
 
-const mainnav = document.querySelector('.navigation')
-const hambutton = document.querySelector('.menu');
 
 const firstPage = [
   {
@@ -49,22 +47,22 @@ function createContentCard(showContent) {
 
 const secondPage = [
   {
-  subtitle: "Our last Competition",
-  content: "Among the many competitions we had in the past, this was our last competition that we held for the club's anniversary.",
-  location: "Pisco City, District San Andres",
-  distance: "10Km",
-  date: "November 24th 2025",
-  image: "images/image-running-three.jpg",
-  imageName: "third image running",
+  subtitles: "Our last Competition",
+  contents: "Among the many competitions we had in the past, this was our last competition that we held for the club's anniversary.",
+  locations: "Pisco City, District San Andres",
+  distances: "10Km",
+  dates: "November 24th 2025",
+  images: "images/image-running-three.jpg",
+  imageNames: "third image running",
   },
   {
-  subtitle: "Our next Competition",
-  content: "We will soon participate in this great competition in the capital of the country, everyone and, of course, our club are invited to take part.",
-  location: "State Lima, Huaura City, Huacho District",
-  distance: "15Km",
-  date: "March 15th 2026",
-  image: "images/image-running-four.jpg",
-  imageName: "fourth image running",
+  subtitles: "Our next Competition",
+  contents: "We will soon participate in this great competition in the capital of the country, everyone and, of course, our club are invited to take part.",
+  locations: "State Lima, Huaura City, Huacho District",
+  distances: "15Km",
+  dates: "March 15th 2026",
+  images: "images/image-running-four.jpg",
+  imageNames: "fourth image running",
   },
 ];
 
@@ -73,28 +71,31 @@ createSecondContentCard(secondPage);
 
 function createSecondContentCard(showSecondContent) {
   document.querySelector(".second-content").innerHTML = "";
-  showSecondContent.forEach(contents => {
-    let card = document.createElement("section");
+  showSecondContent.forEach(secondContents => {
+    let cards = document.createElement("section");
     let eachSubtitle = document.createElement("h2");
     let eachContent = document.createElement("p");
     let eachLocation = document.createElement("p");
     let eachDistance = document.createElement("p");
     let eachDate = document.createElement("p");
-    let img = document.createElement("img");
+    let imgs = document.createElement("img");
 
-    eachSubtitle.textContent = contents.subtitle;
-    eachContent.textContent = contents.content;
-    eachLocation.innerHTML = `<span class="label">Location:</span> ${contents.location}`;
-    eachDistance.innerHTML = `<span class="label">Distance:</span> ${contents.distance}`;
-    eachDate.innerHTML = `<span class="label">Date:</span> ${contents.date}`;
-    img.src = contents.image;
-    img.alt = contents.imageName;
-    img.setAttribute("loading", "lazy");    
+    eachSubtitle.textContent = secondContents.subtitles;
+    eachContent.textContent = secondContents.contents;
+    eachLocation.innerHTML = `<span class="label">Location:</span> ${secondContents.locations}`;
+    eachDistance.innerHTML = `<span class="label">Distance:</span> ${secondContents.distances}`;
+    eachDate.innerHTML = `<span class="label">Date:</span> ${secondContents.dates}`;
+    imgs.src = secondContents.images;
+    imgs.alt = secondContents.imageNames;
+    imgs.setAttribute("loading", "lazy");    
 
-    card.appendChild(eachSubtitle);
-    card.appendChild(eachContent);
-    card.appendChild(img);
+    cards.appendChild(eachSubtitle);
+    cards.appendChild(eachContent);
+    cards.appendChild(eachLocation);
+    cards.appendChild(eachDistance);
+    cards.appendChild(eachDate);
+    cards.appendChild(imgs);
 
-    document.querySelector(".second-content").appendChild(card);
+    document.querySelector(".second-content").appendChild(cards);
   });
 };
