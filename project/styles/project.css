@@ -2,3 +2,7 @@ body {
     width: 1400px;
     text-align: center;
 }
+.content {
+    display: grid;
+    grid-column: 1fr 1fr;
+}
