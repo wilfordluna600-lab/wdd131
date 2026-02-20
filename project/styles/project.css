@@ -6,3 +6,10 @@ body {
     display: grid;
     grid-column: 1fr 1fr;
 }
+header, footer {
+    background-color: #255876;
+    color: white;
+}
+header nav a {
+    color: white;
+}
