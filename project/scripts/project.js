@@ -31,10 +31,10 @@ function createContentCard(showContent) {
     let eachContent = document.createElement("p");
     let img = document.createElement("img");
 
-    eachSubtitle.textContent = firstPage.subtitle;
-    eachContent.textContent = firstPage.content;
-    img.setAttribute("src", firstPage.image);
-    img.setAttribute("alt", firstPage.imageName);
+    eachSubtitle.textContent = contents.subtitle;
+    eachContent.textContent = contents.content;
+    img.src = contents.image;
+    img.alt = contents.imageName;
     img.setAttribute("loading", "lazy");    
 
     card.appendChild(eachSubtitle);
