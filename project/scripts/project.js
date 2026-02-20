@@ -82,9 +82,9 @@ function createSecondContentCard(showSecondContent) {
 
     eachSubtitle.textContent = secondContents.subtitles;
     eachContent.textContent = secondContents.contents;
-    eachLocation.innerHTML = `<span class="label">Location:</span> ${secondContents.locations}`;
-    eachDistance.innerHTML = `<span class="label">Distance:</span> ${secondContents.distances}`;
-    eachDate.innerHTML = `<span class="label">Date:</span> ${secondContents.dates}`;
+    eachLocation.innerHTML = `<span>Location:</span> ${secondContents.locations}`;
+    eachDistance.innerHTML = `<span>Distance:</span> ${secondContents.distances}`;
+    eachDate.innerHTML = `<span>Date:</span> ${secondContents.dates}`;
     imgs.src = secondContents.images;
     imgs.alt = secondContents.imageNames;
     imgs.setAttribute("loading", "lazy");    
