@@ -2,7 +2,7 @@ body {
     width: 1000px;
     text-align: center;
 }
-.content {
+.first-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }

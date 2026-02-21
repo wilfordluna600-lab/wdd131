@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
       eachContent.textContent = contents.content;
       img.src = contents.image;
       img.alt = contents.imageName;
-      img.setAttribute("loading", "lazy");    
+      img.setAttribute("loading", "lazy");
+      img.setAttribute("width", 400);     
 
       card.appendChild(eachSubtitle);
       card.appendChild(eachContent);
@@ -86,7 +87,8 @@ document.addEventListener("DOMContentLoaded", () => {
       eachDate.textContent = `Date: ${secondContents.dates}`;
       imgs.src = secondContents.images;
       imgs.alt = secondContents.imageNames;
-      imgs.setAttribute("loading", "lazy");    
+      imgs.setAttribute("loading", "lazy");
+      imgs.setAttribute("width", 400);     
 
       cards.appendChild(eachSubtitle);
       cards.appendChild(eachContent);
