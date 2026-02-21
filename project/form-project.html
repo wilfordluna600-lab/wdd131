@@ -21,14 +21,19 @@
     </header>
     <main>
         <h1>Sign Up</h1>
-        <form action="review.html" method="get">
-            <label>Required Fields (*)</label>
-            <label>Full Name:* <input type="text" name="name" id="full-name" required></label>
-            <label>Email:* <input type="email" name="email" id="email" required></label>
-            <label>Phone Number:* <input type="tel" name="phone" id="phone-number" required></label>
-            <label>Date of Birth: (Optional) <input type="date" name="completeDate" id="completeDate"></label>
-
-        </form>
+        <div class="box-form"></div>
+            <form action="review.html" method="get">
+                <label>Required Fields (*)</label>
+                <label for="full-name">Full Name:* </label>
+                <input type="text" name="name" id="full-name" required>
+                <label for="email">Email:* </label>
+                <input type="email" name="email" id="email" required>
+                <label for="phone-number">Phone Number:* </label>
+                <input type="tel" name="phone" id="phone-number" required>
+                <label for="completeDate">Date of Birth: (Optional) </label>
+                <input type="date" name="completeDate" id="completeDate">
+            </form>
+        </div>
     </main>
     <footer>
         <p>® <span id="currentyear"></span> - Wilford Luna Escobar - Peru</p>
