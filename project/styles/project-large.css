@@ -1,0 +1,14 @@
+@media screen and (min-width: 700px) {
+    .first-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .second-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    body {
+    width: 1000px;
+    text-align: center;
+}
+}
