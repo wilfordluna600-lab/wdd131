@@ -22,7 +22,8 @@ const firstPage = [
 createContentCard(firstPage);
 
 function createContentCard(showContent) {
-  document.querySelector(".first-content").innerHTML = "";
+  const container = document.querySelector(".first-content").innerHTML = "";
+  if (!container) return;
   showContent.forEach(contents => {
     let card = document.createElement("section");
     let eachSubtitle = document.createElement("h2");
@@ -49,7 +50,7 @@ const secondPage = [
   {
   subtitles: "Our last Competition",
   contents: "Among the many competitions we had in the past, this was our last competition that we held for the club's anniversary.",
-  locations: "Pisco City, District San Andres",
+  locations: "Pisco City - District San Andres",
   distances: "10Km",
   dates: "November 24th 2025",
   images: "images/image-running-three.jpg",
@@ -58,7 +59,7 @@ const secondPage = [
   {
   subtitles: "Our next Competition",
   contents: "We will soon participate in this great competition in the capital of the country, everyone and, of course, our club are invited to take part.",
-  locations: "State Lima, Huaura City, Huacho District",
+  locations: "State Lima - Huaura City - Huacho District",
   distances: "15Km",
   dates: "March 15th 2026",
   images: "images/image-running-four.jpg",
@@ -70,7 +71,8 @@ const secondPage = [
 createSecondContentCard(secondPage);
 
 function createSecondContentCard(showSecondContent) {
-  document.querySelector(".second-content").innerHTML = "";
+  const container = document.querySelector(".second-content").innerHTML = "";
+  if (!container) return;
   showSecondContent.forEach(secondContents => {
     let cards = document.createElement("section");
     let eachSubtitle = document.createElement("h2");
@@ -82,9 +84,9 @@ function createSecondContentCard(showSecondContent) {
 
     eachSubtitle.textContent = secondContents.subtitles;
     eachContent.textContent = secondContents.contents;
-    eachLocation.innerHTML = `<span>Location:</span> ${secondContents.locations}`;
-    eachDistance.innerHTML = `<span>Distance:</span> ${secondContents.distances}`;
-    eachDate.innerHTML = `<span>Date:</span> ${secondContents.dates}`;
+    eachLocation.textContent = `Location: ${secondContents.locations}`;
+    eachDistance.textContent = `Distance: ${secondContents.distances}`;
+    eachDate.textContent = `Date: ${secondContents.dates}`;
     imgs.src = secondContents.images;
     imgs.alt = secondContents.imageNames;
     imgs.setAttribute("loading", "lazy");    
