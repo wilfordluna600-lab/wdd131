@@ -40,8 +40,13 @@ label, input {
     justify-content: space-around;
 }
 form {
-    width: 600px;
+    width: 350px;
     margin-right: auto;
     margin-left: auto;
     text-align: left;
+    margin-bottom: 10px;
+}
+input[type="submit"] {
+    margin: 10px;
+    margin-left: 150px;
 }
