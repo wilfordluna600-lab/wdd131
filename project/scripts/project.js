@@ -21,11 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
 
-  createContentCard(firstPage);
-
   function createContentCard(showContent) {
-    const container = document.querySelector(".first-content").innerHTML = "";
-    if (!container) return;
+    document.querySelector(".first-content").innerHTML = "";
     showContent.forEach(contents => {
       let card = document.createElement("section");
       let eachSubtitle = document.createElement("h2");
@@ -70,11 +67,9 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
 
-  createSecondContentCard(secondPage);
 
   function createSecondContentCard(showSecondContent) {
-    const container = document.querySelector(".second-content").innerHTML = "";
-    if (!container) return;
+    document.querySelector(".second-content").innerHTML = "";
     showSecondContent.forEach(secondContents => {
       let cards = document.createElement("section");
       let eachSubtitle = document.createElement("h2");
@@ -103,5 +98,15 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector(".second-content").appendChild(cards);
     });
   };
+
+  const firstContainer = document.querySelector(".first-content");
+  if (firstContainer) {
+    createContentCard(firstPage);
+  }
+
+  const secondContainer = document.querySelector(".second-content");
+  if (secondContainer) {
+    createSecondContentCard(secondPage);
+  }
 
 });

@@ -1,5 +1,5 @@
 body {
-    width: 1400px;
+    width: 1200px;
     text-align: center;
 }
 .content {
@@ -16,4 +16,19 @@ header, footer {
 }
 header nav a {
     color: white;
+}
+header {
+    height: 50px;
+}
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav a {
+    padding-top: 14px;
+}
+footer {
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin-top: 5px;
 }
