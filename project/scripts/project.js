@@ -112,3 +112,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
+const theButton = document.querySelector("#sign-up-button");
